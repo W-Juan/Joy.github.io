@@ -1,0 +1,65 @@
+/*------common-----------*/
+@mixin setFont($size:14px,$color:black,$family:"weiruanyahei"){
+  font:$size $family;
+  color: $color;
+}
+.alignCenter{
+  text-align: center;
+}
+/*----------nav--------------*/
+.navbar-default .navbar-brand{
+  background: #303434;
+  margin-left: 0;
+  height: auto;
+  padding: 25px 15px;
+  @include setFont(36px,white,"weiruanyahei");
+}
+.navbar-default .navbar-brand:hover{
+  color:white;;
+}
+.navbar-default,.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+  background: none;
+}
+.navbar-nav{
+  margin: 0;
+}
+.navbar{
+  border: none;
+  margin-bottom: 0;
+}
+nav{
+  background: #303434;
+}
+.nav>li>a{
+  @include setFont(16px,white);
+  padding:0 30px;;
+  line-height: 90px;
+  border-bottom: 2px solid transparent;
+}
+.nav>li>a:hover, .nav>li>a:focus,.hover{
+  text-decoration: none;
+  background: #212325;
+  border-bottom: 2px solid #41b7f3;
+}
+.navbar-toggle{
+  margin-top:20px;
+}
+/*------------info----------*/
+#info{
+  background:#212325 ;
+  padding:50px 0;
+}
+.headImg{
+  width: 120px;
+  border-radius: 50%;
+}
+.centerContainer{
+
+  padding:10px 0;
+}
+.signature{
+  @include setFont(26px,white);
+}
+.name,.job,.major{
+  @include setFont(22px,white);
+}

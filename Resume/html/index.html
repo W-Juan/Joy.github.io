@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,Chrome=1">
+    <meta http-equiv="x-ua-compatible" content="IE=9">
+    <title>个人简历--王娟</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugin/layui/layui/css/layui.css">
+    <!--<link rel="stylesheet" href="../css/fullPage.css">-->
+    <link href="//cdn.bootcss.com/fullPage.js/2.9.2/jquery.fullPage.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <style>
+
+    </style>
+
+    <!--[if lt IE 9]-->
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <!--[endif]-->
+</head>
+<body>
+    <header>
+        <nav class="navbar   navbar-static-top" role="navigation" ng-controller="outerCtr">
+            <div class="container">
+                <!-- logo和菜单 -->
+                <div class="navbar-header navbar-default">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand " href="#/inbox" >Resume</a>
+                </div>
+                <!--导航-->
+                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav " id="myMenu">
+                        <li class="navLi" data-menuanchor="info"><a href="#info">简介</a></li>
+                        <li class="navLi" data-menuanchor="skill"><a href="#skill">专业技能</a></li>
+                        <li class="navLi" data-menuanchor="project"><a href="#project">案例作品</a></li>
+                        <li class="navLi" data-menuanchor="photoes"><a href="#photoes">照片墙</a></li>
+                        <li class="navLi" data-menuanchor="contact"><a href="#contact">联系我</a></li>
+                        <!--<li class=""><a href="#contact">联系我</a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="fullPage">
+        <div class="section info">
+            <div class="container infoContainer">
+                <p class="centerContainer alignCenter "><img src="../image/headImg1.jpg" alt="" class="headImg"></p>
+                <p class="centerContainer alignCenter signature">心有多远，脚下的路就有多远</p>
+                <hr>
+                <p class="centerContainer alignCenter name">王  娟</p>
+                <p class="centerContainer alignCenter job">四川师范大学</p>
+                <p class="centerContainer alignCenter major">软件工程专业</p>
+            </div>
+        </div>
+        <div class="section skill">
+            <p>这是专业技能</p>
+        </div>
+        <div class="section project">
+            <p>这是案例作品</p>
+        </div>
+        <div class="section photoes">
+            <!--<p>这是联系方式</p>-->
+            <div class="imgWallContainer">
+                <div class="imgDiv imgDiv1 pointer"></div>
+                <div class="imgDiv imgDiv2 pointer"></div>
+                <div class="imgDiv imgDiv3 pointer"></div>
+                <div class="imgDiv imgDiv4 pointer"></div>
+                <div class="imgDiv imgDiv5 pointer"></div>
+                <div class="imgDiv imgDiv6 pointer"></div>
+                <div class="imgDiv imgDiv7 pointer"></div>
+                <div class="imgDiv imgDiv8 pointer"></div>
+                <div class="imgDiv imgDiv9 pointer"></div>
+                <div class="imgDiv imgDiv10 pointer"></div>
+            </div>
+        </div>
+        <!--<div class="section contact">contact</div>-->
+        <div class="section contact">
+            <div class="formOuter">
+                <div class="formContainer">
+                    <!--联系方式-->
+                    <div class="contactInfoContainer">
+                        <div class="addDiv contactInfoDiv">
+                            <span class="iconfont icon-dizhi blueFont"></span>
+                            <span class="infoContent">四川省成都市</span>
+                        </div>
+                        <div class="phoneDiv contactInfoDiv">
+                            <span class="iconfont icon-weibiaoti- blueFont"></span>
+                            <span class="infoContent">18382230408</span>
+                        </div>
+                        <div class="emailDiv contactInfoDiv">
+                            <span class="iconfont icon-tubiao209 blueFont"></span>
+                            <span class="infoContent">535165469@qq.com</span>
+                        </div>
+                    </div>
+                    <!--表单信息-->
+                    <form class="contactForm" action="javascript:void(0)">
+                        <div class="">
+                            <!--公司名称-->
+                            <div class="inputContainer">
+                                <p class="">公司名称</p>
+                                <input type="text" class=" companyName" id="companyName" placeholder="Company">
+                            </div>
+
+                            <!--公司地址-->
+                            <div class=" inputContainer">
+                                <p class="">公司地址</p>
+                                <input type="text" class=" companyAdress" id="companyAdress" placeholder="Adress">
+                            </div>
+
+                            <!--联系人-->
+                            <div class=" inputContainer">
+                                <p class="">姓名</p>
+                                <input type="text" class=" companyAdress" id="companyContact" placeholder="Name">
+                            </div>
+
+                            <!--联系方式-->
+                            <div class=" inputContainer">
+                                <p class="">联系方式</p>
+                                <input type="text" class=" companyAdress" id="companyPhone" placeholder="Contact">
+                            </div>
+
+                            <!--留言-->
+                            <div class="messageBoardContainer">
+                                <textarea class="mesageBoardContent" cols="30" rows="10" placeholder="留言"></textarea>
+                            </div>
+
+                            <div class="btnDiv">
+                                <button type="submit" class="btn btn-primary submitBtn">留言完毕</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+    <!--<script src="../js/fullPage.min.js"></script>-->
+    <script src="//cdn.bootcss.com/fullPage.js/2.9.2/jquery.fullPage.js"></script>
+    <script src="//cdn.bootcss.com/fullPage.js/2.9.2/vendors/jquery.easings.min.js"></script>
+    <script src="../plugin/layui/layui/layui.js"></script>
+    <script src="../js/common.js"></script>
+    <script>
+        $(function(){
+            $('#fullPage').fullpage({
+                paddingTop: '97px',
+                navigation:true,
+                anchors: ['info', 'skill', 'project', 'photoes','contact'],
+                keyboardScrolling:true,   //通过键盘的上下键可以切换
+                menu: '#myMenu'
+            });
+
+            //提交表单信息
+            $(".submitBtn").click(function(){
+                showSuccess("留言成功，我将尽快与您联系，谢谢！");
+            });
+        });
+    </script>
+
+</body>
+</html>

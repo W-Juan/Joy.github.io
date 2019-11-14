@@ -1,0 +1,266 @@
+/*------common-----------*/
+body{
+    font-family: "youyuan";
+}
+.alignCenter { text-align: center; }
+.pointer{
+    cursor: pointer;
+}
+.blueFont{
+    color: #41b7f3;
+}
+/*清楚浮动*/
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/*两端对齐*/
+.justify:after{
+    content: "";
+    display: inline-block;
+}
+/*-------------------fullpage--------------*/
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+    width: 8px;
+    height: 8px;
+}
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span{
+    margin:-5px 0px 0px -4px;
+    background: #80d6f2;;
+}
+#fp-nav ul li:hover a span, .fp-slidesNav ul li:hover a span{
+    margin: -5px 0px 0px -3px;
+}
+/*----------nav--------------*/
+header{width:100%;position:fixed;z-index: 70}
+.navbar-default .navbar-brand { background: #303434; margin-left: 0; height: auto; padding: 25px 15px; font: 36px "weiruanyahei"; color: white; }
+
+.navbar-default .navbar-brand:hover { color: white; }
+
+.navbar-default, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus { background: none; }
+
+.navbar-nav { margin: 0; }
+
+.navbar { border: none; margin-bottom: 0; }
+
+nav { background: #303434; }
+
+.nav > li > a { font: 16px "weiruanyahei"; color: white; padding: 0 30px; line-height: 95px; border-bottom: 2px solid transparent; }
+
+.nav > li > a:hover, .hover { text-decoration: none; background: #212325; border-bottom: 2px solid #41b7f3; }
+.nav > li > a:focus{background: none}
+.navbar-toggle { margin-top: 20px; }
+#fp-nav ul li a span{background:white}
+#myMenu .active a{
+    text-decoration: none;
+    background: #212325;
+    border-bottom: 2px solid #41b7f3;
+}
+/*#80d6f2;*/
+
+/*-==============info===============*/
+.info,.skill,.project,.photoes,.contact{ background: url("../image/bg1.png"); }
+
+.headImg { width: 120px; border-radius: 50%; }
+
+.centerContainer { padding: 10px 0; }
+
+.signature { font: 26px "youyuan"; color: white; }
+
+.name, .job, .major { font: 22px "youyuan"; color: white; }
+
+/*====================photoes==================*/
+.imgWallContainer{
+    width: 90%;
+    min-height: 540px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.imgDiv1{
+    background: url("../images/1.jpg") no-repeat;
+}
+.imgDiv2{
+    background: url("../images/2.jpg") no-repeat;
+}
+.imgDiv3{
+    background: url("../images/3.jpg") no-repeat;
+}
+.imgDiv4{
+    background: url("../images/4.jpg") no-repeat;
+}
+.imgDiv5{
+    background: url("../images/5.jpg") no-repeat;
+}
+.imgDiv6{
+    background: url("../images/6.jpg") no-repeat;
+}
+.imgDiv7{
+    background: url("../images/7.jpg") no-repeat;
+}
+.imgDiv8{
+    background: url("../images/8.jpg") no-repeat;
+}
+.imgDiv9{
+    background: url("../images/9.jpg") no-repeat;
+}
+.imgDiv10{
+    background: url("../images/10.jpg") no-repeat;
+}
+.imgDiv{
+    border:8px solid white;
+    width: 350px;
+    height: 250px;
+    background-size:cover;
+    background-position: center;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    transition: all 1.5s;
+}
+.imgDiv{
+    position: absolute;
+}
+.imgDiv1,.imgDiv5{
+    left: 50px;
+    top: 65px;
+    -webkit-transform: rotate(-18deg);
+    -moz-transform: rotate(-18deg);
+    -ms-transform: rotate(-18deg);
+    -o-transform: rotate(-18deg);
+    transform: rotate(-18deg);
+}
+.imgDiv2,.imgDiv6{
+    left: 260px;
+    top: 75px;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+.imgDiv3,.imgDiv7{
+    left: 505px;
+    top: 110px;
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    transform: rotate(-30deg);
+}
+.imgDiv4,.imgDiv8{
+    left: 720px;
+    top: 80px;
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    transform: rotate(6deg);
+}
+.imgDiv5,.imgDiv6,.imgDiv7,.imgDiv8{
+    top: 200px;
+}
+.imgDiv:hover{
+    z-index: 999;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg) scale(1.2);
+}
+.imgDiv10{
+    left:20%;
+    top:25%;
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+}
+.imgDiv9{
+    left:40%;
+    top:30%;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+/*------------contact-------------*/
+.formOuter{
+    width: 800px;
+    margin: 20px auto;
+}
+.formContainer{
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+.contactForm{
+    margin: 0 auto;
+    /*border: 1px solid red;*/
+}
+.formContainer{
+    background: white;
+}
+/*联系方式等*/
+.contactInfoContainer{
+    margin: 0px 0px 0px 10px;
+}
+.contactInfoDiv{
+    display: inline-block;
+    margin:20px 50px;
+}
+.contactInfoDiv .iconfont{
+
+    font-size: 22px;
+}
+.contactInfoDiv .infoContent{
+    font-size: 16px;
+}
+/*===========表单============*/
+.inputContainer{
+    margin: 20px 60px;
+    float: left;
+}
+.inputContainer input{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    outline: none;
+    font-size: 16px;
+    width: 250px;
+}
+.inputContainer p{
+    margin: 10px 0px;
+}
+.btnDiv{
+    /*margin: 0px 40px;*/
+    text-align: center;
+}
+.messageBoardContainer{
+    margin-left: 60px;
+}
+.mesageBoardContent{
+    width: 88.5%;
+    height: 100px;
+    resize: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-image: initial;
+    margin: 10px 0px;
+}
+.submitBtn{
+    box-shadow: 5px 4px 5px #ccc;
+    -webkit-boxshadow: 5px 4px 5px #ccc;
+    -o-box-shadow: 5px 4px 5px #ccc;
+    -moz-box-shadow: 5px 4px 5px #ccc;
+}
+/*# sourceMappingURL=index.css.map */
